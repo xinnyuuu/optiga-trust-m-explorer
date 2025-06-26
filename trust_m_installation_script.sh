@@ -41,10 +41,9 @@ echo $LINUX_TOOLS_PATH
 cd $LINUX_TOOLS_PATH
 
 if [ -d "${LINUX_TOOLS_PATH}/pbs" ]; then
-  echo "-----> Found 'pbs' directory. Deleting..."
-  rm -rf "${LINUX_TOOLS_PATH}/pbs"
+    echo "0102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F202122232425262728292A2B2C2D2E2F303132333435363738393A3B3C3D3E3F40" > "${LINUX_TOOLS_PATH}/pbs/pbsfile.txt"
 else
-  echo "-----> No 'pbs' directory found."
+  echo "-----> No 'pbsfile.txt' directory found."
 fi
 
 set -e
